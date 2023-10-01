@@ -15,10 +15,22 @@ Make all the elements in the list have bold color font
 And try editing it with getelementsbyclassname and then by getelementbytagname
 */
 
+// const li = document.getElementsByTagName("li");
+
+// li[2].style.backgroundColor = "green";
+
+// for (let i = 0; i < li.length; i++) {
+//   li[i].style.fontWeight = "bold";
+// }
+
+/**
+ 
+Make the 2nd item have green background color
+Make the 3rd item invisible
+
+ */
 const li = document.getElementsByTagName("li");
 
-li[2].style.backgroundColor = "green";
+li[1].style.backgroundColor = "green";
 
-for (let i = 0; i < li.length; i++) {
-  li[i].style.fontWeight = "bold";
-}
+li[2].style.display = "none";
